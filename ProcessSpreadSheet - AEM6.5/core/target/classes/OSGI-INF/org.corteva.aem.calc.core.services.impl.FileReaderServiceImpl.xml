@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="org.corteva.aem.calc.core.services.impl.FileReaderServiceImpl" immediate="true">
+  <service>
+    <provide interface="org.corteva.aem.calc.core.services.FileReaderService"/>
+  </service>
+  <implementation class="org.corteva.aem.calc.core.services.impl.FileReaderServiceImpl"/>
+</scr:component>

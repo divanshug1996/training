@@ -1,0 +1,38 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1602243618730
+Build-Jdk: 11.0.8
+Built-By: pnq3
+Bundle-Description: Core bundle for ProcessSpreadsheet
+Bundle-ManifestVersion: 2
+Bundle-Name: ProcessSpreadsheet - Core
+Bundle-SymbolicName: org.corteva.aem.ProcessSpreadsheet.core
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.corteva.aem.calc.core.constants;version="0.0.1",org.
+ corteva.aem.calc.core.models;version="0.0.1",org.corteva.aem.calc.core;
+ version="1.0",org.corteva.aem.calc.core.services;version="0.0.1";uses:=
+ "javax.jcr",org.corteva.aem.calc.core.servlets;version="0.0.1";uses:="o
+ rg.apache.sling.api,org.apache.sling.api.servlets"
+Import-Package: javax.jcr;version="[2.0,3)",javax.servlet;version="[3.1,
+ 4)",javax.servlet.http;version="[3.1,4)",org.apache.commons.fileupload.
+ servlet;version="[1.3,2)",org.apache.commons.io;version="[1.4,2)",org.a
+ pache.jackrabbit.commons;version="[2.4,3)",org.apache.poi;version="[3.0
+ ,4)",org.apache.poi.openxml4j.exceptions;version="[2.1,3)",org.apache.p
+ oi.ss.usermodel;version="[3.0,4)",org.apache.poi.xssf.usermodel;version
+ ="[3.0,4)",org.apache.sling.api;version="[2.3,3)",org.apache.sling.api.
+ request;version="[2.4,3)",org.apache.sling.api.resource;version="[2.11,
+ 3)",org.apache.sling.api.servlets;version="[2.2,3)",org.corteva.aem.cal
+ c.core.services;version="[0.0,1)",org.slf4j;version="[1.7,2)",javax.inj
+ ect;version="0.0.0",javax.annotation;version="0.0.0"
+Provide-Capability: osgi.service;objectClass:List<String>="javax.servlet
+ .Servlet",osgi.service;objectClass:List<String>="org.corteva.aem.calc.c
+ ore.services.FileReaderService"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compone
+ nt)(version>=1.3.0)(!(version>=2.0.0)))",osgi.service;filter:="(objectC
+ lass=org.corteva.aem.calc.core.services.FileReaderService)";effective:=
+ active,osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/org.corteva.aem.calc.core.services.impl.File
+ ReaderServiceImpl.xml,OSGI-INF/org.corteva.aem.calc.core.servlets.Handl
+ eFileUploadServlet.xml
+Sling-Model-Packages: org.corteva.aem.processspreadsheet.core
+Tool: Bnd-4.1.0.201810181252

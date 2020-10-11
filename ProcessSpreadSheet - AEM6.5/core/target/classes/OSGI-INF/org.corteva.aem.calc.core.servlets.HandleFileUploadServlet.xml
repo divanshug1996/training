@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="org.corteva.aem.calc.core.servlets.HandleFileUploadServlet">
+  <property name="sling.servlet.paths" type="String" value="/bin/processspreadsheet/fileupload"/>
+  <property name="service.description" type="String" value=" Handle File Upload Servlet"/>
+  <property name="sling.servlet.methods" type="String" value="POST"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="fileReaderService" interface="org.corteva.aem.calc.core.services.FileReaderService" field="fileReaderService"/>
+  <implementation class="org.corteva.aem.calc.core.servlets.HandleFileUploadServlet"/>
+</scr:component>

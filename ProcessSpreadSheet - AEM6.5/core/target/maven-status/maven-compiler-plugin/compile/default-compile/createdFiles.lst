@@ -1,0 +1,7 @@
+org\corteva\aem\calc\core\services\FileReaderService.class
+org\corteva\aem\calc\core\services\impl\FileReaderServiceImpl$1.class
+org\corteva\aem\calc\core\package-info.class
+org\corteva\aem\calc\core\servlets\HandleFileUploadServlet.class
+org\corteva\aem\calc\core\models\SelectSavings.class
+org\corteva\aem\calc\core\constants\AppConstants.class
+org\corteva\aem\calc\core\services\impl\FileReaderServiceImpl.class
